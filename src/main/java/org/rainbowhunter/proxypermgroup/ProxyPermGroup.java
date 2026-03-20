@@ -17,7 +17,6 @@ import net.luckperms.api.model.group.GroupManager;
 import net.luckperms.api.model.user.UserManager;
 import net.luckperms.api.node.matcher.NodeMatcher;
 import net.luckperms.api.node.types.InheritanceNode;
-import org.checkerframework.checker.nullness.qual.NonNull;
 import org.slf4j.Logger;
 import org.spongepowered.configurate.ConfigurationNode;
 import org.spongepowered.configurate.yaml.YamlConfigurationLoader;
@@ -37,7 +36,8 @@ import java.util.concurrent.CompletableFuture;
         version = BuildConstants.VERSION, 
         dependencies = {
             @Dependency(id = "luckperms")
-        }
+        },
+        authors = {"Hank Wu"}
 )
 public class ProxyPermGroup {
 
